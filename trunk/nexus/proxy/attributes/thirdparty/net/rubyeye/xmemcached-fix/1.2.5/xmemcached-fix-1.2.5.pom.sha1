@@ -1,0 +1,32 @@
+<file>
+  <generation>1</generation>
+  <path>/net/rubyeye/xmemcached-fix/1.2.5/xmemcached-fix-1.2.5.pom.sha1</path>
+  <readable>true</readable>
+  <writable>true</writable>
+  <repositoryId>thirdparty</repositoryId>
+  <created>1307592602312</created>
+  <modified>1307592602312</modified>
+  <storedLocally>1307592602312</storedLocally>
+  <lastTouched>1307592602312</lastTouched>
+  <lastRequested>1307592602359</lastRequested>
+  <expired>false</expired>
+  <attributes>
+    <entry>
+      <string>digest.sha1</string>
+      <string>7437d3fd453a4689864c5ff022e92e0b46240223</string>
+    </entry>
+    <entry>
+      <string>request.address</string>
+      <string>127.0.0.1</string>
+    </entry>
+    <entry>
+      <string>request.user</string>
+      <string>admin</string>
+    </entry>
+    <entry>
+      <string>digest.md5</string>
+      <string>cb79b5daa994acc489adad9d6397fd05</string>
+    </entry>
+  </attributes>
+  <length>40</length>
+</file>

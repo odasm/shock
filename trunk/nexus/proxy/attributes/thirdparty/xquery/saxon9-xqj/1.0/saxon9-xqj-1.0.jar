@@ -1,0 +1,32 @@
+<file>
+  <generation>5</generation>
+  <path>/xquery/saxon9-xqj/1.0/saxon9-xqj-1.0.jar</path>
+  <readable>true</readable>
+  <writable>true</writable>
+  <repositoryId>thirdparty</repositoryId>
+  <created>1307536281718</created>
+  <modified>1307536281718</modified>
+  <storedLocally>1307536281718</storedLocally>
+  <lastTouched>1307536281718</lastTouched>
+  <lastRequested>1307538602718</lastRequested>
+  <expired>false</expired>
+  <attributes>
+    <entry>
+      <string>digest.sha1</string>
+      <string>c54494724efcef36c9552d9d7cd0977f20217b39</string>
+    </entry>
+    <entry>
+      <string>request.address</string>
+      <string>127.0.0.1</string>
+    </entry>
+    <entry>
+      <string>request.user</string>
+      <string>admin</string>
+    </entry>
+    <entry>
+      <string>digest.md5</string>
+      <string>deae51bb01cf882515203ba3fa5dd088</string>
+    </entry>
+  </attributes>
+  <length>5024396</length>
+</file>

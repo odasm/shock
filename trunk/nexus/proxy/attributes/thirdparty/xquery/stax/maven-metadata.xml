@@ -1,0 +1,24 @@
+<file>
+  <generation>1</generation>
+  <path>/xquery/stax/maven-metadata.xml</path>
+  <readable>true</readable>
+  <writable>true</writable>
+  <repositoryId>thirdparty</repositoryId>
+  <created>1307536377828</created>
+  <modified>1307536377828</modified>
+  <storedLocally>1307536377828</storedLocally>
+  <lastTouched>1307536377828</lastTouched>
+  <lastRequested>1307536377843</lastRequested>
+  <expired>false</expired>
+  <attributes>
+    <entry>
+      <string>digest.sha1</string>
+      <string>284f8030a3afaeb6033196b2e97d1558847f818e</string>
+    </entry>
+    <entry>
+      <string>digest.md5</string>
+      <string>947f90abc21b6fab3fbd62856abc47af</string>
+    </entry>
+  </attributes>
+  <length>317</length>
+</file>

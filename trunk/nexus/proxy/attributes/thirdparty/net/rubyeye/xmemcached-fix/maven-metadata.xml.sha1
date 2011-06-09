@@ -1,0 +1,24 @@
+<file>
+  <generation>1</generation>
+  <path>/net/rubyeye/xmemcached-fix/maven-metadata.xml.sha1</path>
+  <readable>true</readable>
+  <writable>true</writable>
+  <repositoryId>thirdparty</repositoryId>
+  <created>1307592605265</created>
+  <modified>1307592605265</modified>
+  <storedLocally>1307592605265</storedLocally>
+  <lastTouched>1307592605265</lastTouched>
+  <lastRequested>1307592605265</lastRequested>
+  <expired>false</expired>
+  <attributes>
+    <entry>
+      <string>digest.sha1</string>
+      <string>d9655d083b7863c51f173ac541623e181f14c3e0</string>
+    </entry>
+    <entry>
+      <string>digest.md5</string>
+      <string>ee029ee8285258782a70b6c4857dda04</string>
+    </entry>
+  </attributes>
+  <length>40</length>
+</file>

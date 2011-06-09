@@ -1,0 +1,28 @@
+<file>
+  <generation>4</generation>
+  <path>/archetype-catalog.xml</path>
+  <readable>true</readable>
+  <writable>false</writable>
+  <repositoryId>codehaus-snapshots</repositoryId>
+  <created>1307583699843</created>
+  <modified>1307583699843</modified>
+  <storedLocally>1307583699859</storedLocally>
+  <lastTouched>1307583699859</lastTouched>
+  <lastRequested>1307583699859</lastRequested>
+  <expired>false</expired>
+  <attributes>
+    <entry>
+      <string>digest.sha1</string>
+      <string>3d53e0972f19170619d2d209bc1199d9b7241f57</string>
+    </entry>
+    <entry>
+      <string>contentGenerator</string>
+      <string>ArchetypeContentGenerator</string>
+    </entry>
+    <entry>
+      <string>digest.md5</string>
+      <string>da82f071c0ef680112b1cbdf3bf11c72</string>
+    </entry>
+  </attributes>
+  <length>25</length>
+</file>
