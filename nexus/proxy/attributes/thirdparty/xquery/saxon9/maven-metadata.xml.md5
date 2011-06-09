@@ -1,0 +1,24 @@
+<file>
+  <generation>2</generation>
+  <path>/xquery/saxon9/maven-metadata.xml.md5</path>
+  <readable>true</readable>
+  <writable>true</writable>
+  <repositoryId>thirdparty</repositoryId>
+  <created>1307536321437</created>
+  <modified>1307536321437</modified>
+  <storedLocally>1307536321437</storedLocally>
+  <lastTouched>1307536321437</lastTouched>
+  <lastRequested>1307536511359</lastRequested>
+  <expired>false</expired>
+  <attributes>
+    <entry>
+      <string>digest.sha1</string>
+      <string>9067d2231e3994608ea443f8637d0e28c20dfb20</string>
+    </entry>
+    <entry>
+      <string>digest.md5</string>
+      <string>770ac58714b55aa3e85c1b7accf1689a</string>
+    </entry>
+  </attributes>
+  <length>32</length>
+</file>

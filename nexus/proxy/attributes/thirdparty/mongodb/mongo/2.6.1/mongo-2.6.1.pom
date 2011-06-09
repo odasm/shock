@@ -1,0 +1,32 @@
+<file>
+  <generation>4</generation>
+  <path>/mongodb/mongo/2.6.1/mongo-2.6.1.pom</path>
+  <readable>true</readable>
+  <writable>true</writable>
+  <repositoryId>thirdparty</repositoryId>
+  <created>1307538100453</created>
+  <modified>1307538100453</modified>
+  <storedLocally>1307538100453</storedLocally>
+  <lastTouched>1307538100453</lastTouched>
+  <lastRequested>1307538132187</lastRequested>
+  <expired>false</expired>
+  <attributes>
+    <entry>
+      <string>digest.sha1</string>
+      <string>dcfe39f82160b2a449da64444180627f4bc41570</string>
+    </entry>
+    <entry>
+      <string>request.address</string>
+      <string>127.0.0.1</string>
+    </entry>
+    <entry>
+      <string>request.user</string>
+      <string>admin</string>
+    </entry>
+    <entry>
+      <string>digest.md5</string>
+      <string>db36a70a421747564901f637387991d4</string>
+    </entry>
+  </attributes>
+  <length>448</length>
+</file>

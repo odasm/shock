@@ -1,0 +1,24 @@
+<file>
+  <generation>1</generation>
+  <path>/mongodb/mongo/maven-metadata.xml.sha1</path>
+  <readable>true</readable>
+  <writable>true</writable>
+  <repositoryId>thirdparty</repositoryId>
+  <created>1307538100687</created>
+  <modified>1307538100687</modified>
+  <storedLocally>1307538100687</storedLocally>
+  <lastTouched>1307538100687</lastTouched>
+  <lastRequested>1307538100703</lastRequested>
+  <expired>false</expired>
+  <attributes>
+    <entry>
+      <string>digest.sha1</string>
+      <string>f6f0c0c663a2e9450499b9c54c4c1dd6bb69bea2</string>
+    </entry>
+    <entry>
+      <string>digest.md5</string>
+      <string>40890cd4ebd6371a2174a33fe699e5b6</string>
+    </entry>
+  </attributes>
+  <length>40</length>
+</file>

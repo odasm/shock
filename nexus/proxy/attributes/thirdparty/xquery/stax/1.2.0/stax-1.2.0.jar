@@ -1,0 +1,32 @@
+<file>
+  <generation>3</generation>
+  <path>/xquery/stax/1.2.0/stax-1.2.0.jar</path>
+  <readable>true</readable>
+  <writable>true</writable>
+  <repositoryId>thirdparty</repositoryId>
+  <created>1307536377875</created>
+  <modified>1307536377875</modified>
+  <storedLocally>1307536377875</storedLocally>
+  <lastTouched>1307536377875</lastTouched>
+  <lastRequested>1307538636796</lastRequested>
+  <expired>false</expired>
+  <attributes>
+    <entry>
+      <string>digest.sha1</string>
+      <string>c434800de5e4bbe1822805be5fb1c32d6834f830</string>
+    </entry>
+    <entry>
+      <string>request.address</string>
+      <string>127.0.0.1</string>
+    </entry>
+    <entry>
+      <string>request.user</string>
+      <string>admin</string>
+    </entry>
+    <entry>
+      <string>digest.md5</string>
+      <string>aa3439d235f7d999532b66bac56c1f87</string>
+    </entry>
+  </attributes>
+  <length>179346</length>
+</file>

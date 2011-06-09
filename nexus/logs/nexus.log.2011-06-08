@@ -1,0 +1,72 @@
+2011-06-08 19:35:54 WARN  [er_start_runner] - org.sonatype.security.configuration.source.FileSecurityConfigurationSource - No configuration file in place, copying the default one and continuing with it.
+2011-06-08 19:35:55 INFO  [er_start_runner] - org.sonatype.security.configuration.source.FileSecurityConfigurationSource - Loading Security configuration from E:\tem\nexus-oss-webapp-1.9.1.1-bundle\nexus-oss-webapp-1.9.1.1\.\..\sonatype-work\nexus\conf\security-configuration.xml
+2011-06-08 19:35:55 INFO  [er_start_runner] - org.sonatype.nexus.timeline.DefaultNexusTimeline - Initializing Nexus Timeline...
+2011-06-08 19:35:56 INFO  [er_start_runner] - org.sonatype.nexus.DefaultNexus - 
+-------------------------------------------------
+
+Initializing Nexus (OSS), Version 1.9.1.1
+
+-------------------------------------------------
+2011-06-08 19:35:56 INFO  [er_start_runner] - org.sonatype.nexus.DefaultNexus - Activating locally installed plugins...
+2011-06-08 19:35:58 INFO  [er_start_runner] - org.sonatype.nexus.DefaultNexus - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-indexer-lucene-plugin:1.9.1.1" was successful.
+2011-06-08 19:35:58 INFO  [er_start_runner] - org.sonatype.nexus.DefaultNexus - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-archetype-plugin:1.9.1.1" was successful.
+2011-06-08 19:35:58 INFO  [er_start_runner] - org.sonatype.nexus.DefaultNexus - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-rrb-plugin:1.9.1.1" was successful.
+2011-06-08 19:35:58 INFO  [er_start_runner] - org.sonatype.nexus.DefaultNexus - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-plugin-console-plugin:1.9.1.1" was successful.
+2011-06-08 19:35:58 INFO  [er_start_runner] - org.sonatype.nexus.DefaultNexus - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins.ldap:nexus-ldap-realm-plugin:1.9.1.1" was successful.
+2011-06-08 19:35:58 INFO  [er_start_runner] - org.sonatype.nexus.DefaultNexus - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-core-documentation-plugin:1.9.1.1" was successful.
+2011-06-08 19:35:58 INFO  [er_start_runner] - org.sonatype.plexus.components.ehcache.DefaultEhCacheWrapper - Creating and configuring EHCache manager with classpath:/ehcache.xml, using disk store 'none'
+2011-06-08 19:35:58 INFO  [er_start_runner] - org.sonatype.nexus.configuration.application.DefaultNexusConfiguration - Loading Nexus Configuration...
+2011-06-08 19:35:58 INFO  [er_start_runner] - org.sonatype.nexus.configuration.source.StaticConfigurationSource - Configuration loaded succesfully.
+2011-06-08 19:35:58 WARN  [er_start_runner] - org.sonatype.nexus.configuration.source.FileConfigurationSource - No configuration file in place, copying the default one and continuing with it.
+2011-06-08 19:35:58 INFO  [er_start_runner] - org.sonatype.nexus.configuration.source.FileConfigurationSource - Loading Nexus configuration from E:\tem\nexus-oss-webapp-1.9.1.1-bundle\nexus-oss-webapp-1.9.1.1\.\..\sonatype-work\nexus\conf\nexus.xml
+2011-06-08 19:35:58 INFO  [er_start_runner] - org.sonatype.nexus.configuration.source.FileConfigurationSource - Configuration loaded succesfully.
+2011-06-08 19:35:58 INFO  [er_start_runner] - org.sonatype.nexus.configuration.validator.DefaultApplicationConfigurationValidator - Nexus configuration validated succesfully.
+2011-06-08 19:35:58 INFO  [er_start_runner] - org.sonatype.nexus.configuration.application.DefaultNexusConfiguration - Applying Nexus Configuration...
+2011-06-08 19:35:58 INFO  [er_start_runner] - org.sonatype.security.configuration.source.FileSecurityConfigurationSource - Loading Security configuration from E:\tem\nexus-oss-webapp-1.9.1.1-bundle\nexus-oss-webapp-1.9.1.1\.\..\sonatype-work\nexus\conf\security-configuration.xml
+2011-06-08 19:35:58 INFO  [er_start_runner] - org.apache.shiro.cache.ehcache.EhCacheManager - Cache with name 'org.sonatype.security.realms.XmlAuthenticatingRealm.authorizationCache' does not yet exist.  Creating now.
+2011-06-08 19:35:58 INFO  [er_start_runner] - org.apache.shiro.cache.ehcache.EhCacheManager - Added EhCache named [org.sonatype.security.realms.XmlAuthenticatingRealm.authorizationCache]
+2011-06-08 19:35:58 INFO  [er_start_runner] - org.apache.shiro.cache.ehcache.EhCacheManager - Cache with name 'org.sonatype.security.realms.XmlAuthorizingRealm.authorizationCache.1' does not yet exist.  Creating now.
+2011-06-08 19:35:58 INFO  [er_start_runner] - org.apache.shiro.cache.ehcache.EhCacheManager - Added EhCache named [org.sonatype.security.realms.XmlAuthorizingRealm.authorizationCache.1]
+2011-06-08 19:35:58 INFO  [er_start_runner] - org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered default repository types.
+2011-06-08 19:36:00 INFO  [er_start_runner] - org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository ID='central' (contentClass='maven2', mainFacet='org.sonatype.nexus.proxy.maven.MavenProxyRepository')
+2011-06-08 19:36:00 INFO  [er_start_runner] - org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository ID='google' (contentClass='maven2', mainFacet='org.sonatype.nexus.proxy.maven.MavenProxyRepository')
+2011-06-08 19:36:00 INFO  [er_start_runner] - org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository ID='java.net-m2' (contentClass='maven2', mainFacet='org.sonatype.nexus.proxy.maven.MavenProxyRepository')
+2011-06-08 19:36:00 INFO  [er_start_runner] - org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository ID='java.net-m1' (contentClass='maven1', mainFacet='org.sonatype.nexus.proxy.maven.MavenProxyRepository')
+2011-06-08 19:36:00 INFO  [er_start_runner] - org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository ID='apache-snapshots' (contentClass='maven2', mainFacet='org.sonatype.nexus.proxy.maven.MavenProxyRepository')
+2011-06-08 19:36:00 INFO  [er_start_runner] - org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository ID='codehaus-snapshots' (contentClass='maven2', mainFacet='org.sonatype.nexus.proxy.maven.MavenProxyRepository')
+2011-06-08 19:36:00 INFO  [er_start_runner] - org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository ID='releases' (contentClass='maven2', mainFacet='org.sonatype.nexus.proxy.maven.MavenHostedRepository')
+2011-06-08 19:36:00 INFO  [er_start_runner] - org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository ID='snapshots' (contentClass='maven2', mainFacet='org.sonatype.nexus.proxy.maven.MavenHostedRepository')
+2011-06-08 19:36:01 INFO  [er_start_runner] - org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository ID='thirdparty' (contentClass='maven2', mainFacet='org.sonatype.nexus.proxy.maven.MavenHostedRepository')
+2011-06-08 19:36:01 INFO  [er_start_runner] - org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository ID='central-m1' (contentClass='maven1', mainFacet='org.sonatype.nexus.proxy.maven.MavenShadowRepository')
+2011-06-08 19:36:01 INFO  [er_start_runner] - org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository ID='java.net-m1-m2' (contentClass='maven2', mainFacet='org.sonatype.nexus.proxy.maven.MavenShadowRepository')
+2011-06-08 19:36:01 INFO  [er_start_runner] - org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository ID='public' (contentClass='maven2', mainFacet='org.sonatype.nexus.proxy.repository.GroupRepository')
+2011-06-08 19:36:01 INFO  [er_start_runner] - org.sonatype.scheduling.DefaultTaskConfigManager - 0 task(s) to load.
+2011-06-08 19:36:01 INFO  [er_start_runner] - org.sonatype.nexus.DefaultNexus - This is 1st start of new Nexus instance.
+2011-06-08 19:36:01 INFO  [er_start_runner] - org.sonatype.nexus.DefaultNexus - Nexus Work Directory : E:\tem\nexus-oss-webapp-1.9.1.1-bundle\nexus-oss-webapp-1.9.1.1\.\..\sonatype-work\nexus
+2011-06-08 19:36:01 INFO  [er_start_runner] - org.sonatype.nexus.DefaultNexus - Started Nexus (version 1.9.1.1 OSS)
+2011-06-08 19:36:01 WARN  [er_start_runner] - org.sonatype.security.model.source.FileModelConfigurationSource - No configuration file in place, copying the default one and continuing with it.
+2011-06-08 19:36:01 INFO  [er_start_runner] - org.sonatype.security.model.source.FileModelConfigurationSource - Loading Security configuration from E:\tem\nexus-oss-webapp-1.9.1.1-bundle\nexus-oss-webapp-1.9.1.1\.\..\sonatype-work\nexus\conf\security.xml
+2011-06-08 19:36:01 INFO  [er_start_runner] - org.sonatype.security.configuration.source.FileSecurityConfigurationSource - Loading Security configuration from E:\tem\nexus-oss-webapp-1.9.1.1-bundle\nexus-oss-webapp-1.9.1.1\.\..\sonatype-work\nexus\conf\security-configuration.xml
+2011-06-08 19:36:02 WARN  [er_start_runner] - org.apache.shiro.web.config.IniFilterChainResolverFactory - The [filters] section has been deprecated and will be removed in a future release!  Please move all object configuration (filters and all other objects) to the [main] section.
+2011-06-08 19:36:02 INFO  [er_start_runner] - org.apache.shiro.config.ReflectionBuilder - An instance with name 'authcBasic' already exists.  Redefining this object as a new instance of type []
+2011-06-08 19:36:02 INFO  [er_start_runner] - org.apache.shiro.config.ReflectionBuilder - An instance with name 'perms' already exists.  Redefining this object as a new instance of type []
+2011-06-08 19:36:03 INFO  [er_start_runner] - org.mortbay.log - Started SelectChannelConnector@0.0.0.0:8081
+2011-06-08 19:36:19 INFO  [@qtp-17189485-0] - /nexus - nexus: [Noelios Restlet Engine] - Attaching application: org.sonatype.nexus.rest.NexusApplication@1fdff07 to URI: /nexus
+2011-06-08 19:36:21 INFO  [@qtp-17189485-4] - org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Enabling session validation scheduler...
+2011-06-08 19:36:21 INFO  [@qtp-17189485-2] - org.sonatype.security.model.source.FileModelConfigurationSource - Loading Security configuration from E:\tem\nexus-oss-webapp-1.9.1.1-bundle\nexus-oss-webapp-1.9.1.1\.\..\sonatype-work\nexus\conf\security.xml
+2011-06-08 19:36:21 INFO  [@qtp-17189485-2] - org.apache.shiro.cache.ehcache.EhCacheManager - Using existing EHCache named [shiro-activeSessionCache]
+2011-06-08 19:36:29 INFO  [roxy-2-thread-6] - org.sonatype.nexus.proxy.storage.remote.commonshttpclient.CommonsHttpClientRemoteStorage - Remote storage settings change detected for ProxyRepository ID="central" ("Maven Central"), updating HttpClient...
+2011-06-08 19:36:29 INFO  [roxy-2-thread-5] - org.sonatype.nexus.proxy.storage.remote.commonshttpclient.CommonsHttpClientRemoteStorage - Remote storage settings change detected for ProxyRepository ID="apache-snapshots" ("Apache Snapshots"), updating HttpClient...
+2011-06-08 19:36:29 INFO  [roxy-2-thread-3] - org.sonatype.nexus.proxy.storage.remote.commonshttpclient.CommonsHttpClientRemoteStorage - Remote storage settings change detected for ProxyRepository ID="java.net-m1" ("java.net-m1"), updating HttpClient...
+2011-06-08 19:36:29 INFO  [roxy-2-thread-2] - org.sonatype.nexus.proxy.storage.remote.commonshttpclient.CommonsHttpClientRemoteStorage - Remote storage settings change detected for ProxyRepository ID="java.net-m2" ("java.net - Maven 2"), updating HttpClient...
+2011-06-08 19:36:29 INFO  [roxy-2-thread-4] - org.sonatype.nexus.proxy.storage.remote.commonshttpclient.CommonsHttpClientRemoteStorage - Remote storage settings change detected for ProxyRepository ID="codehaus-snapshots" ("Codehaus Snapshots"), updating HttpClient...
+2011-06-08 19:36:29 INFO  [roxy-2-thread-1] - org.sonatype.nexus.proxy.storage.remote.commonshttpclient.CommonsHttpClientRemoteStorage - Remote storage settings change detected for ProxyRepository ID="google" ("Google Code"), updating HttpClient...
+2011-06-08 20:29:43 INFO  [qtp-17189485-16] - org.sonatype.nexus.rest.artifact.ArtifactContentPlexusResource - ResourceStoreContentResource, illegal request:Repository with ID='thirdparty' does not allow updating artifacts.
+2011-06-08 20:30:01 INFO  [qtp-17189485-16] - org.sonatype.nexus.rest.artifact.ArtifactContentPlexusResource - ResourceStoreContentResource, illegal request:Repository with ID='thirdparty' does not allow updating artifacts.
+2011-06-08 20:30:33 INFO  [qtp-17189485-16] - org.sonatype.nexus.rest.artifact.ArtifactContentPlexusResource - ResourceStoreContentResource, illegal request:Repository with ID='thirdparty' does not allow updating artifacts.
+2011-06-08 20:36:21 INFO  [Thread-17      ] - org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Validating all active sessions...
+2011-06-08 20:36:21 INFO  [Thread-17      ] - org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+2011-06-08 20:49:03 INFO  [or@0.0.0.0:8081] - org.mortbay.log - seeing JVM BUG(s) - cancelling interestOps==0
+2011-06-08 20:49:59 WARN  [qtp-17189485-18] - org.restlet.Component.Server - An exception occured writing the response entity: null
+2011-06-08 20:49:59 WARN  [qtp-17189485-18] - org.mortbay.log - Committed before 500 An exception occured writing the response entity
+2011-06-08 20:49:59 WARN  [qtp-17189485-18] - org.restlet.Component.Server - Error while handling an HTTP server call: Committed
