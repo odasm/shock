@@ -1,14 +1,14 @@
 <file>
-  <generation>4</generation>
+  <generation>5</generation>
   <path>/archetype-catalog.xml</path>
   <readable>true</readable>
-  <writable>true</writable>
+  <writable>false</writable>
   <repositoryId>apache-snapshots</repositoryId>
-  <created>1307583699671</created>
-  <modified>1307583699671</modified>
-  <storedLocally>1307583699671</storedLocally>
-  <lastTouched>1307583699671</lastTouched>
-  <lastRequested>1307592651546</lastRequested>
+  <created>1308794717046</created>
+  <modified>1308794717046</modified>
+  <storedLocally>1308794717046</storedLocally>
+  <lastTouched>1308794717046</lastTouched>
+  <lastRequested>1308794717062</lastRequested>
   <expired>false</expired>
   <attributes>
     <entry>

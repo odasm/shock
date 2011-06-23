@@ -1,14 +1,14 @@
 <file>
-  <generation>7</generation>
+  <generation>8</generation>
   <path>/archetype-catalog.xml</path>
   <readable>true</readable>
   <writable>false</writable>
   <repositoryId>central</repositoryId>
-  <created>1307583697843</created>
-  <modified>1307583697843</modified>
-  <storedLocally>1307583697843</storedLocally>
-  <lastTouched>1307583697843</lastTouched>
-  <lastRequested>1307583697906</lastRequested>
+  <created>1308794715578</created>
+  <modified>1308794715578</modified>
+  <storedLocally>1308794715625</storedLocally>
+  <lastTouched>1308794715625</lastTouched>
+  <lastRequested>1308794715640</lastRequested>
   <expired>false</expired>
   <attributes>
     <entry>

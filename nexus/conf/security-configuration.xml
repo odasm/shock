@@ -4,7 +4,7 @@
   <enabled>true</enabled>
   <anonymousAccessEnabled>true</anonymousAccessEnabled>
   <anonymousUsername>anonymous</anonymousUsername>
-  <anonymousPassword>{twShU1GCH2QHrbOTT+NNxL6lzXC1kTkKUZMqbGppyCk=}</anonymousPassword>
+  <anonymousPassword>{23Wno14mHz4HdBLn6IQHW5sZNmMjP2201jzB2P4sMs0=}</anonymousPassword>
   <realms>
     <realm>XmlAuthenticatingRealm</realm>
     <realm>XmlAuthorizingRealm</realm>

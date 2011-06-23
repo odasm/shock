@@ -1,20 +1,19 @@
 <file>
-  <generation>5</generation>
+  <generation>7</generation>
   <path>/.meta/repository-metadata.xml</path>
   <readable>true</readable>
   <writable>true</writable>
   <repositoryId>apache-snapshots</repositoryId>
-  <created>1306825912000</created>
-  <modified>1306825912000</modified>
-  <storedLocally>1307592654046</storedLocally>
-  <lastTouched>1307592654046</lastTouched>
-  <lastRequested>1307592654125</lastRequested>
+  <created>1308794719843</created>
+  <modified>1308794719843</modified>
+  <storedLocally>1308794719843</storedLocally>
+  <lastTouched>1308794719843</lastTouched>
+  <lastRequested>1308794719843</lastRequested>
   <expired>false</expired>
-  <remoteUrl>http://repository.apache.org/snapshots/.meta/repository-metadata.xml</remoteUrl>
   <attributes>
     <entry>
       <string>digest.sha1</string>
-      <string>f08613fa799f71ae28c54633fb2ab7ef41336c62</string>
+      <string>14a0f8f9b8e3087dd75567d01f59570cd00faef4</string>
     </entry>
     <entry>
       <string>contentGenerator</string>
@@ -22,7 +21,7 @@
     </entry>
     <entry>
       <string>digest.md5</string>
-      <string>44a216866b3280e3652532d01055e51f</string>
+      <string>d60e736f9c61f436a7a326f20e9579a1</string>
     </entry>
   </attributes>
   <length>349</length>
