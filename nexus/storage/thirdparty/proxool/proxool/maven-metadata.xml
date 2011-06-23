@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>proxool</groupId>
+  <artifactId>proxool</artifactId>
+  <versioning>
+    <latest>0.9.1-fix</latest>
+    <release>0.9.1-fix</release>
+    <versions>
+      <version>0.9.1-fix</version>
+    </versions>
+    <lastUpdated>20110623020725</lastUpdated>
+  </versioning>
+</metadata>
