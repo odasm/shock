@@ -1,14 +1,14 @@
 <file>
-  <generation>4</generation>
+  <generation>5</generation>
   <path>/archetype-catalog.xml</path>
   <readable>true</readable>
   <writable>false</writable>
   <repositoryId>codehaus-snapshots</repositoryId>
-  <created>1307583699843</created>
-  <modified>1307583699843</modified>
-  <storedLocally>1307583699859</storedLocally>
-  <lastTouched>1307583699859</lastTouched>
-  <lastRequested>1307583699859</lastRequested>
+  <created>1308794717328</created>
+  <modified>1308794717328</modified>
+  <storedLocally>1308794717328</storedLocally>
+  <lastTouched>1308794717328</lastTouched>
+  <lastRequested>1308794717328</lastRequested>
   <expired>false</expired>
   <attributes>
     <entry>
