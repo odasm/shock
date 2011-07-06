@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <chin:methodInvokeResponse xmlns:chin="http://www.chinatelecom.hub.com">
+      <chin:return><![CDATA[<?xml version="1.0"  encoding="UTF-8" ?><ContractRoot><TcpCont><ActionCode>1</ActionCode><TransactionID/><RspTime>20110706110830</RspTime><Response><RspType>1</RspType><RspCode>1111</RspCode><RspDesc>系统错误，请联系系统维护人员！</RspDesc></Response></TcpCont></ContractRoot>]]></chin:return>
+    </chin:methodInvokeResponse>
+  </soapenv:Body>
+</soapenv:Envelope>
