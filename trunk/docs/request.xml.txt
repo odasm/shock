@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenv:Header>
+    <Esb soapenv:actor="" soapenv:mustUnderstand="0"> 
+      <Route> 
+        <Sender>10.1101</Sender>  
+        <ServCode>44.1101.shadowFlowQuery.SynReq</ServCode>  
+        <MsgId>2008078005-1187</MsgId>  
+        <TransId/>  
+        <Version/>  
+        <AuthCode/>  
+        <AuthType/>  
+        <Flag>1</Flag>  
+        <MsgType/>  
+        <CarryType/>  
+        <ServTestFlag>1</ServTestFlag> 
+      </Route>  
+      <Business> 
+        <BizDomain/>  
+        <BizFirstType/>  
+        <BizSecType/> 
+      </Business>
+    </Esb>
+  </soapenv:Header>
+  <soapenv:Body>
+    <methodInvoke xmlns="http://impl.server.pf.ws.bj.oss.ztesoft.com/">
+      <arg0 xmlns="">shadowFlowQuery</arg0>
+      <arg1 xmlns="">&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;InterfaceMsg&gt;&lt;DispatchOrderInfo&gt;&lt;DispatchOrderBrief&gt;&lt;DispatchOrderID&gt;489&lt;/DispatchOrderID&gt;&lt;DispatchOrderNO&gt;°²»Õxx¡¾2011¡¿102ºÅ&lt;/DispatchOrderNO&gt;&lt;CustOrderID&gt;1097&lt;/CustOrderID&gt;&lt;CustOrderNO&gt;201105180019623004&lt;/CustOrderNO&gt;&lt;/DispatchOrderBrief&gt;&lt;ProductItem&gt;&lt;ProductItemID&gt;2008078005-1187&lt;/ProductItemID&gt;&lt;ProdInstID&gt;201105180019623004&lt;/ProdInstID&gt;&lt;/ProductItem&gt;&lt;/DispatchOrderInfo&gt;&lt;/InterfaceMsg&gt;</arg1>
+    </methodInvoke>
+  </soapenv:Body>
+</soapenv:Envelope>
