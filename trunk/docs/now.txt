@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Esb soapenv:actor="" soapenv:mustUnderstand="0">
+      <Route>
+        <Time>2011-08-30 16:30:58</Time>
+      </Route>
+    </Esb>
+  </soapenv:Header>
+  <soapenv:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ns1:platformQryResponse xmlns:ns1="http://www.chinatelecom.com/oss/sqmws/services/SqmService" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+      <platformQryReturn xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="soapenc:string"><![CDATA[<root><responseStatus>0</responseStatus><interfaceCode>vpnInfoQry</interfaceCode><resultInfoList><recordList><recordInfo><attrInfo><attrCode>msisdn</attrCode><attrName>用户真实号码</attrName><attrValue>18923080064</attrValue></attrInfo><attrInfo><attrCode>vpnName</attrCode><attrName>集团名称</attrName><attrValue>中国电信股份有限公司广东分公司子群</attrValue></attrInfo><attrInfo><attrCode>vpnType</attrCode><attrName>集团类型</attrName><attrValue>2</attrValue></attrInfo><attrInfo><attrCode>vpnNum</attrCode><attrName>集团号码</attrName><attrValue>00200000619</attrValue></attrInfo><attrInfo><attrCode>memberNum</attrCode><attrName>成员短号</attrName><attrValue>444415</attrValue></attrInfo><attrInfo><attrCode>extension</attrCode><attrName>分机短号长度</attrName><attrValue>6</attrValue></attrInfo><attrInfo><attrCode>maxOutTeam</attrCode><attrName>最大网外号码组成员数</attrName><attrValue>0</attrValue></attrInfo><attrInfo><attrCode>maxAttendant</attrCode><attrName>话务员最大数</attrName><attrValue>1</attrValue></attrInfo><attrInfo><attrCode>maxFamgrp</attrCode><attrName>集团话务员</attrName><attrValue>--</attrValue></attrInfo><attrInfo><attrCode>attPlan</attrCode><attrName>话务员轮询方案</attrName><attrValue>1</attrValue></attrInfo><attrInfo><attrCode>vpnKind</attrCode><attrName>集团付费属性</attrName><attrValue>1</attrValue></attrInfo><attrInfo><attrCode>userChockNum</attrCode><attrName>个人封锁号码</attrName><attrValue>--</attrValue></attrInfo><attrInfo><attrCode>vpnChockNum</attrCode><attrName>集团封锁号码</attrName><attrValue>--</attrValue></attrInfo></recordInfo></recordList></resultInfoList></root>]]></platformQryReturn>
+    </ns1:platformQryResponse>
+  </soapenv:Body>
+</soapenv:Envelope>

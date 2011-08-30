@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenv:Header>
+    <Esb soapenv:actor="" soapenv:mustUnderstand="0">
+      <Route>
+        <Time>2011-08-26 16:21:01</Time>
+      </Route>
+    </Esb>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ns1:platformQryResponse xmlns:ns1="http://www.chinatelecom.com/oss/sqmws/services/SqmService" soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+      <platformQryReturn xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xsi:type="soapenc:string">&lt;root&gt;&lt;responseStatus&gt;0&lt;/responseStatus&gt;&lt;interfaceCode&gt;vpnInfoQry&lt;/interfaceCode&gt;&lt;resultInfoList&gt;&lt;recordList&gt;&lt;recordInfo&gt;&lt;attrInfo&gt;&lt;attrCode&gt;msisdn&lt;/attrCode&gt;&lt;attrName&gt;用户真实号码&lt;/attrName&gt;&lt;attrValue&gt;18923080064&lt;/attrValue&gt;&lt;/attrInfo&gt;&lt;attrInfo&gt;&lt;attrCode&gt;vpnName&lt;/attrCode&gt;&lt;attrName&gt;集团名称&lt;/attrName&gt;&lt;attrValue&gt;--&lt;/attrValue&gt;&lt;/attrInfo&gt;&lt;attrInfo&gt;&lt;attrCode&gt;vpnType&lt;/attrCode&gt;&lt;attrName&gt;集团类型&lt;/attrName&gt;&lt;attrValue&gt;2&lt;/attrValue&gt;&lt;/attrInfo&gt;&lt;attrInfo&gt;&lt;attrCode&gt;vpnNum&lt;/attrCode&gt;&lt;attrName&gt;集团号码&lt;/attrName&gt;&lt;attrValue&gt;00200000619&lt;/attrValue&gt;&lt;/attrInfo&gt;&lt;attrInfo&gt;&lt;attrCode&gt;memberNum&lt;/attrCode&gt;&lt;attrName&gt;成员短号&lt;/attrName&gt;&lt;attrValue&gt;444415&lt;/attrValue&gt;&lt;/attrInfo&gt;&lt;attrInfo&gt;&lt;attrCode&gt;extension&lt;/attrCode&gt;&lt;attrName&gt;分机短号长度&lt;/attrName&gt;&lt;attrValue&gt;--&lt;/attrValue&gt;&lt;/attrInfo&gt;&lt;attrInfo&gt;&lt;attrCode&gt;maxOutTeam&lt;/attrCode&gt;&lt;attrName&gt;最大网外号码组成员数&lt;/attrName&gt;&lt;attrValue&gt;0&lt;/attrValue&gt;&lt;/attrInfo&gt;&lt;attrInfo&gt;&lt;attrCode&gt;maxAttendant&lt;/attrCode&gt;&lt;attrName&gt;话务员最大数&lt;/attrName&gt;&lt;attrValue&gt;--&lt;/attrValue&gt;&lt;/attrInfo&gt;&lt;attrInfo&gt;&lt;attrCode&gt;maxFamgrp&lt;/attrCode&gt;&lt;attrName&gt;集团话务员&lt;/attrName&gt;&lt;attrValue&gt;--&lt;/attrValue&gt;&lt;/attrInfo&gt;&lt;attrInfo&gt;&lt;attrCode&gt;attPlan&lt;/attrCode&gt;&lt;attrName&gt;话务员轮询方案&lt;/attrName&gt;&lt;attrValue&gt;--&lt;/attrValue&gt;&lt;/attrInfo&gt;&lt;attrInfo&gt;&lt;attrCode&gt;vpnKind&lt;/attrCode&gt;&lt;attrName&gt;集团付费属性&lt;/attrName&gt;&lt;attrValue&gt;0&lt;/attrValue&gt;&lt;/attrInfo&gt;&lt;attrInfo&gt;&lt;attrCode&gt;userChockNum&lt;/attrCode&gt;&lt;attrName&gt;个人封锁号码&lt;/attrName&gt;&lt;attrValue&gt;--&lt;/attrValue&gt;&lt;/attrInfo&gt;&lt;attrInfo&gt;&lt;attrCode&gt;vpnChockNum&lt;/attrCode&gt;&lt;attrName&gt;集团封锁号码&lt;/attrName&gt;&lt;attrValue&gt;--&lt;/attrValue&gt;&lt;/attrInfo&gt;&lt;/recordInfo&gt;&lt;/recordList&gt;&lt;/resultInfoList&gt;&lt;/root&gt;</platformQryReturn>
+    </ns1:platformQryResponse>
+  </soapenv:Body>
+</soapenv:Envelope>
