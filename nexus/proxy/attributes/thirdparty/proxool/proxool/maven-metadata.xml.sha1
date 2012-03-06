@@ -1,0 +1,24 @@
+<file>
+  <generation>1</generation>
+  <path>/proxool/proxool/maven-metadata.xml.sha1</path>
+  <readable>true</readable>
+  <writable>true</writable>
+  <repositoryId>thirdparty</repositoryId>
+  <created>1308794845984</created>
+  <modified>1308794845984</modified>
+  <storedLocally>1308794845984</storedLocally>
+  <lastTouched>1308794845984</lastTouched>
+  <lastRequested>1308794846031</lastRequested>
+  <expired>false</expired>
+  <attributes>
+    <entry>
+      <string>digest.sha1</string>
+      <string>f3db1c3697ea726ca55ed709885a14807dc881e7</string>
+    </entry>
+    <entry>
+      <string>digest.md5</string>
+      <string>1949673da10e7caf76f91b88f6b5679e</string>
+    </entry>
+  </attributes>
+  <length>40</length>
+</file>
