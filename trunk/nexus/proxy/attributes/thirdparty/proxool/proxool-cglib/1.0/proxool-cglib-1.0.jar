@@ -1,0 +1,32 @@
+<file>
+  <generation>2</generation>
+  <path>/proxool/proxool-cglib/1.0/proxool-cglib-1.0.jar</path>
+  <readable>true</readable>
+  <writable>true</writable>
+  <repositoryId>thirdparty</repositoryId>
+  <created>1308794925609</created>
+  <modified>1308794925609</modified>
+  <storedLocally>1308794925609</storedLocally>
+  <lastTouched>1308794925609</lastTouched>
+  <lastRequested>1308794925718</lastRequested>
+  <expired>false</expired>
+  <attributes>
+    <entry>
+      <string>digest.sha1</string>
+      <string>9e26af5eb454063eab835ca63f2413e6ae62b488</string>
+    </entry>
+    <entry>
+      <string>request.address</string>
+      <string>127.0.0.1</string>
+    </entry>
+    <entry>
+      <string>request.user</string>
+      <string>admin</string>
+    </entry>
+    <entry>
+      <string>digest.md5</string>
+      <string>ea81119afd9c3292b66be37005890cca</string>
+    </entry>
+  </attributes>
+  <length>334469</length>
+</file>

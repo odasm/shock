@@ -1,0 +1,32 @@
+<file>
+  <generation>1</generation>
+  <path>/proxool/proxool/0.9.1-fix/proxool-0.9.1-fix.pom.sha1</path>
+  <readable>true</readable>
+  <writable>true</writable>
+  <repositoryId>thirdparty</repositoryId>
+  <created>1308794845781</created>
+  <modified>1308794845781</modified>
+  <storedLocally>1308794845781</storedLocally>
+  <lastTouched>1308794845781</lastTouched>
+  <lastRequested>1308794845812</lastRequested>
+  <expired>false</expired>
+  <attributes>
+    <entry>
+      <string>digest.sha1</string>
+      <string>4bbfd29359560a7bdc9753dbdb8754949c623c00</string>
+    </entry>
+    <entry>
+      <string>request.address</string>
+      <string>127.0.0.1</string>
+    </entry>
+    <entry>
+      <string>request.user</string>
+      <string>admin</string>
+    </entry>
+    <entry>
+      <string>digest.md5</string>
+      <string>baf0fdafef65905b738e0f581a9b3592</string>
+    </entry>
+  </attributes>
+  <length>40</length>
+</file>

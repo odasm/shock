@@ -1,0 +1,24 @@
+<file>
+  <generation>1</generation>
+  <path>/proxool/proxool-cglib/maven-metadata.xml.md5</path>
+  <readable>true</readable>
+  <writable>true</writable>
+  <repositoryId>thirdparty</repositoryId>
+  <created>1308794925593</created>
+  <modified>1308794925593</modified>
+  <storedLocally>1308794925593</storedLocally>
+  <lastTouched>1308794925593</lastTouched>
+  <lastRequested>1308794925593</lastRequested>
+  <expired>false</expired>
+  <attributes>
+    <entry>
+      <string>digest.sha1</string>
+      <string>764dcb97ada19458aef5950f5598d0aee24096ce</string>
+    </entry>
+    <entry>
+      <string>digest.md5</string>
+      <string>344083f9b5356320a69963a90c603c82</string>
+    </entry>
+  </attributes>
+  <length>32</length>
+</file>
