@@ -1,0 +1,10 @@
+
+1、什么是webservice，webservice有哪些作用，有哪些实现。请解释下wsdl、soap、http、socket、esb等概念。
+2、普元ESB有什么作用？说明业务服务、中介服务、代理服务各指什么。endpoint与transport有什么区别？
+3、利用普元ESB写一个简单的转发消息流，开放一个代理http服务，代理服务引用一个http业务服务，业务服务指向www.baidu.com.将业务服务内容送给消费者。
+4、利用普元ESB将一个http客户端发送的soap文保存到一个队列中去。
+   通过队列客户端将队列中的消息取出并打印。
+5、利用普元ESb做一个webservice，需求是输入一个字符串a，返回hello,a给服务消费方。
+6、通过soapHeader中的一个route标志，来将服务转向不同的地址，如1时指向www.g.cn,2时指向www.baidu.com。并将客户端请求报文保存，后面由队列客户端提取消息并打印。
+7、将开发好的程序打包部署在服务器上供测试检查。
+   建议每天两题，主要是理解概念，并熟悉java开发。
