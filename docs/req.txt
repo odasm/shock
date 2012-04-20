@@ -1,0 +1,16 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Header><Esb soapenv:actor="" soapenv:mustUnderstand="0"> <Route> <Sender>45.1101</Sender> <ServCode>10.1101.gxqueryIdcSource.SynReq</ServCode> <MsgId>10.1101.gxqueryIdcSource_1334734082846</MsgId> <TransId/> <Version/> <AuthCode/> <AuthType/> <Flag>1</Flag> <MsgType/> <CarryType>0</CarryType> <ServTestFlag>0</ServTestFlag> </Route> <Business> <BizDomain/> <BizFirstType/> <BizSecType/> </Business></Esb></soapenv:Header><soapenv:Body><methodInvoke xmlns="http://impl.server.pf.ws.bj.oss.ztesoft.com/"><arg0 xmlns="">queryIdcSource</arg0><arg1 xmlns="">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;Root&gt;
+  &lt;MsgHead&gt;
+    &lt;!--源系统编码--&gt;
+    &lt;From&gt;an_pf&lt;/From&gt;
+    &lt;!--目的系统编码--&gt;
+    &lt;To&gt;gd_pf&lt;/To&gt;
+    &lt;Time&gt;2012-04-18&lt;/Time&gt;
+    &lt;TransactionID&gt;ahan_pf201204184390657685&lt;/TransactionID&gt;
+    &lt;!--省份编码--&gt;
+    &lt;ProvinceCode&gt;ah&lt;/ProvinceCode&gt;
+  &lt;/MsgHead&gt;
+  &lt;queryMsg&gt;
+    &lt;Areacode&gt;808&lt;/Areacode&gt;
+  &lt;/queryMsg&gt;
+&lt;/Root&gt;</arg1></methodInvoke></soapenv:Body></soapenv:Envelope>
