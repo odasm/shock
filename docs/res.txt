@@ -1,0 +1,14 @@
+      <Esb>
+         <Route>
+            <Time>2012-04-26 16:32:32.095</Time>
+            <EsbId>9545afb57ddb47dfb6948c774c7654e4</EsbId>
+         </Route>
+      </Esb>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ns:uploadResponse xmlns:ns="http://webservice.ftp.oipPlugin.starit.com.cn">
+         <ns:return><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<ResRoot><BillNo>10.1103_1234567890</BillNo><ReqTime>2012-04-19 21:43:00</ReqTime><ResTime>2012-04-26 04:04:26</ResTime><ReturnCode>1</ReturnCode><ReturnMsg>接受成功</ReturnMsg></ResRoot>]]></ns:return>
+      </ns:uploadResponse>
+   </soapenv:Body>
+</soapenv:Envelope>
