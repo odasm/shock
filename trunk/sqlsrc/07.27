@@ -1,0 +1,11 @@
+select * from aip_message where msg_id='testhost';
+select * from aip_message_info where msg_id='test1717';
+select * from aip_analysis_end_time where rownum<10 order by id desc
+select * from aip_message
+select * from aip_message_persistence where msg_id='testhost25'
+select * from aip_msginfo_persistence where rownum<10 order by aip_id desc
+alter table aip_message_persistence add (HOST varchar2(20));
+commit;
+alter table aip_message_persistence modify (host varchar2(32));
+update serv_afford_man_reg set serv_type=0
+select * from serv_afford_man_reg

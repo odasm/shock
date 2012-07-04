@@ -1,0 +1,6 @@
+select * from serv_man_ip_conf where serv_man_id= 481
+
+select * from serv_define where serv_define_id =1621;
+
+select * from serv_flux_ctl order by serv_ctrl_id desc;
+SELECT SERV_LIMIT_ID  FROM SERV_VISIT_LIMIT;

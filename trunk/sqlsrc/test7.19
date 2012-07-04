@@ -1,0 +1,38 @@
+select * from aip_message_persistence
+AIP_MESSAGE_ID_SEQ.Nextval
+alter table user_info modify(user_id varchar2(16));
+commit;
+select msg_pkg from aip_msginfo_persistence for update
+select * from aip_error_message
+select * from serv_invoke_trends 
+insert into aip_error_message (id,message)
+INSERT INTO AIP_ERROR_MESSAGE (ID,MESSAGE) 
+			VALUES(0,null)
+SELECT * FROM AIP_ERROR_MESSAGE WHERE ROWNUM<2 ORDER BY ID  FOR UPDATE
+select * from aip_message_persistence where rownum<4 order by id desc 
+
+select * from aip_msginfo_persistence where rownum<4 order by aip_id desc
+
+
+
+SELECT * FROM AIP_MSGINFO_PERSISTENCE WHERE CSB_ID = '8887ce7a-903f-11df-bb8f-872158e60000'  FOR UPDATE
+
+insert into aip_msginfo_persistence (aip_id, msg_id) values (aip_msginfo_id_seq.nextval,null)
+
+
+select * 
+insert into
+
+
+
+
+
+SELECT * FROM AIP_MSGINFO_PERSISTENCE WHERE CSB_ID = '8887ce7a-903f-11df-bb8f-872158e60000'
+
+
+ AND ROWNUM<3 ORDER BY AIP_ID DESC FOR UPDATE
+
+
+
+
+
