@@ -1,0 +1,241 @@
+/*=========================== ===================================*/
+/* Table: CONN_WSDL_SC  互联WSDL信息表                                        */
+/*==============================================================*/
+create table CONN_WSDL_SC  (
+   CONN_WSDL_ID         NUMBER                          not null,
+   CONN_ROUTE_PLAT_CODE VARCHAR2(64),
+   WSDL_ID              NUMBER,
+   WSDL_NAME            varchar2(64),
+   PROXY_WSDL_TEXT      CLOB,
+   DEL_FLAG             NUMBER(2),
+   constraint PK_CONN_WSDL_SC primary key (CONN_WSDL_ID)
+);
+
+/*==============================================================*/
+/* Table: CONN_PROTOCOL_SC      互联协议信息表                                */
+/*==============================================================*/
+create table CONN_PROTOCOL_SC  (
+   CONN_PROTOCOL_ID     NUMBER                          not null,
+   CONN_ROUTE_PLAT_CODE VARCHAR2(64),
+   PROTOCOL_ID          NUMBER,
+   PROTOCOL_NAME        varchar2(64),
+   FILE_PATH            varchar2(64),
+   DEL_FLAG             NUMBER(2),
+   constraint PK_CONN_PROTOCOL_SC primary key (CONN_PROTOCOL_ID)
+);
+
+/*==============================================================*/
+/* Table: "conn_plat_record"        互联平台SR状态记录表                            */
+/*==============================================================*/
+create table "conn_plat_record"  (
+   "conn_plat_mon_id"   NUMBER,
+   "conn_plat_code"     VARCHAR2(128),
+   "conn_plat_stat"     NUMBER(2),
+   "update_time"        TIMESTAMP
+);
+
+/*==============================================================*/
+/* Table: CONN_SERV_REG         互联服务注册表                                */
+/*==============================================================*/
+create table CONN_SERV_REG  (
+   CONN_SERV_ID         NUMBER                          not null,
+   CONN_SERV_CODE       VARCHAR2(128)                   not null,
+   CONN_SERV_NAME       VARCHAR2(128),
+   CONN_SERV_TYPE       NUMBER(2),
+   AREA_CODE            VARCHAR2(128),
+   CONN_ROUTE_PLAT_CODE VARCHAR2(64),
+   PROVIDE_CODE         VARCHAR2(128),
+   SERV_DEFINE_ID       NUMBER                          not null,
+   CONN_SERV_INVOKE_MODE NUMBER(2),
+   CONN_SERV_STATUS     NUMBER(2),
+   CONN_SERV_PROC_STATUS NUMBER(2),
+   WSDL_ID              NUMBER,
+   PROTOCOL_ID          NUMBER,
+   DEL_FLAG             NUMBER(2),
+   DESCRIPTION          VARCHAR2(255),
+   constraint PK_CONN_SERV_REG primary key (CONN_SERV_ID)
+);
+
+alter table CONN_SERV_REG
+   add constraint FK_CONN_SER_REFERENCE_CONN_SRP foreign key (CONN_ROUTE_PLAT_CODE)
+      references CONN_SRP_REG (CONN_ROUTE_PLAT_CODE);
+
+alter table CONN_SERV_REG
+   add constraint FK_CONN_SER_REFERENCE_CONN_WSD foreign key (WSDL_ID)
+      references CONN_WSDL_SC (WSDL_ID);
+
+alter table CONN_SERV_REG
+   add constraint FK_CONN_SER_REFERENCE_CONN_PRO foreign key (PROTOCOL_ID)
+      references CONN_PROTOCOL_SC (PROTOCOL_ID);
+
+alter table CONN_SERV_REG
+   add constraint FK_CONN_SER_REFERENCE_SERV_DEF foreign key (SERV_DEFINE_ID)
+      references SERV_DEFINE (SERV_DEFINE_ID);
+
+/*==============================================================*/
+/* Table: CONN_SERV_CONTROL_SC  互联服务流量控制表                                */
+/*==============================================================*/
+create table CONN_SERV_CONTROL_SC  (
+   CONN_SERV_CTRL_ID    NUMBER                          not null,
+   CONN_SERV_CODE       VARCHAR2(128),
+   FREQUENCY_LIMIT      NUMBER,
+   PKG_SIZE_LIMIT       NUMBER,
+   FLOW_LIMIT           NUMBER,
+   DEL_FLAG             NUMBER(2),
+   constraint PK_CONN_SERV_CONTROL_SC primary key (CONN_SERV_CTRL_ID)
+);
+
+alter table CONN_SERV_CONTROL_SC
+   add constraint FK_CONN_SER_REFERENCE_CONN_SER foreign key (CONN_SERV_CODE)
+      references CONN_SERV_REG (CONN_SERV_CODE);
+
+/*==============================================================*/
+/* Table: CONN_SERV_MON_SC    互联服务监控记录表                                  */
+/*==============================================================*/
+create table CONN_SERV_MON_SC  (
+   CONN_SERV_MON_ID     NUMBER                          not null,
+   CONN_SERV_CODE       VARCHAR2(128),
+   CONN_SERV_STAT       NUMBER,
+   UPDATE_TIME          DATE,
+   REQUEST_TIMES        NUMBER,
+   EXCEPTION_RATE       NUMBER(3,2),
+   BUSI_TIME_CONSUMING  NUMBER,
+   AIP_TIME_CONSUMING   NUMBER,
+   TOTAL_FLOW           NUMBER,
+   AVERAGE_FLOW         NUMBER,
+   STATISTICS_END_TIME  DATE,
+   constraint PK_CONN_SERV_MON_SC primary key (CONN_SERV_MON_ID)
+);
+
+/*==============================================================*/
+/* Table: CONN_VISIT_LIMIT      互联服务访问权限表                                */
+/*==============================================================*/
+create table CONN_VISIT_LIMIT  (
+   CONN_SERV_LIMIT_ID   NUMBER                          not null,
+   CONN_SERV_CODE       VARCHAR2(128),
+   CONN_SERV_MAN_CODE   VARCHAR2(64),
+   DEL_FLAG             NUMBER(2),
+   constraint PK_CONN_VISIT_LIMIT primary key (CONN_SERV_LIMIT_ID)
+);
+
+alter table CONN_VISIT_LIMIT
+   add constraint FK_CONN_VIS_REFERENCE_CONN_SER foreign key (CONN_SERV_CODE)
+      references CONN_SERV_REG (CONN_SERV_CODE);
+
+
+
+/*==============================================================*/
+/* Table: CONN_ROUTE_LOG    互联路由日志表                                    */
+/*==============================================================*/
+create table CONN_ROUTE_LOG  (
+   "conn_route_log_id"  INTEGER,
+   "msg_id"             VARCHAR2(128),
+   "esb_id"             VARCHAR2(128),
+   "in_time"            TIMESTAMP,
+   "out_time"           TIMESTAMP,
+   "flag"               INTEGER,
+   "msg_type"           VARCHAR2(64),
+   "resend_count"       NUMBER(4),
+   "resend_time"        TIMESTAMP,
+   "msg_status"         NUMBER(2)
+);
+
+comment on table CONN_ROUTE_LOG is
+'用于记录消息的路由转发过程';
+
+comment on column CONN_ROUTE_LOG."msg_id" is
+'发送方提供的消息ID';
+
+comment on column CONN_ROUTE_LOG."esb_id" is
+'路由时平台记录的唯一标识';
+
+comment on column CONN_ROUTE_LOG."in_time" is
+'进入路由接口的时间';
+
+comment on column CONN_ROUTE_LOG."out_time" is
+'消息出路由接口的时间';
+
+comment on column CONN_ROUTE_LOG."flag" is
+'将转发标志加1保存';
+
+comment on column CONN_ROUTE_LOG."msg_type" is
+'请求还是响应';
+
+comment on column CONN_ROUTE_LOG."resend_count" is
+'对异步有效';
+
+comment on column CONN_ROUTE_LOG."resend_time" is
+'对异步有效';
+
+comment on column CONN_ROUTE_LOG."msg_status" is
+'消息发送是否成功标志及其他状态';
+
+
+/*==============================================================*/
+/* Table: CONN_SRP_REG    SR平台信息注册表                                      */
+/*==============================================================*/
+create table CONN_SRP_REG  (
+   CONN_ROUTE_PLAT_ID   NUMBER                          not null,
+   CONN_ROUTE_PLAT_CODE VARCHAR2(64)                    not null,
+   CONN_ROUTE_PLAT_NAME VARCHAR2(128),
+   CONN_ROUTE_PLAT_AREA VARCHAR2(64),
+   CONN_ROUTE_PLAT_URL  VARCHAR2(256),
+   SRP_DYNAMIC_STATUS   NUMBER(2),
+   SRP_STATIC_STATUS    NUMBER(2),
+   DEL_FLAG             NUMBER(2),
+   constraint PK_CONN_SRP_REG primary key (CONN_ROUTE_PLAT_ID)
+);
+
+comment on column CONN_SRP_REG.SRP_DYNAMIC_STATUS is
+'1:连接正常
+2:连接异常';
+
+comment on column CONN_SRP_REG.SRP_STATIC_STATUS is
+'1.初始状态
+2.已下发
+3.待审核
+4.已审核
+5.已上报';
+
+
+/*==============================================================*/
+/* Table: CONN_SRP_INTERFACE_SC   SR平台接口表                              */
+/*==============================================================*/
+create table CONN_SRP_INTERFACE_SC  (
+   CONN_SRP_INTER_ID    NUMBER                          not null,
+   CONN_ROUTE_PLAT_CODE VARCHAR2(64),
+   CONN_INTER_ADDR      VARCHAR2(128),
+   CONN_INTER_TYPE      NUMBER(2),
+   DEL_FLAG             NUMBER(2),
+   constraint PK_CONN_SRP_INTERFACE_SC primary key (CONN_SRP_INTER_ID)
+);
+
+comment on column CONN_SRP_INTERFACE_SC.CONN_INTER_TYPE is
+'1:SR下发接口
+2::服务下发接口';
+
+/*==============================================================*/
+/* Table: CONN_HEART_BEAT   SR心跳信息表                                    */
+/*==============================================================*/
+create table CONN_HEART_BEAT  (
+   SRP_HEART_BEAT_ID    NUMBER                          not null,
+   CONN_ROUTE_PLAT_CODE VARCHAR2(64),
+   END_REPORT_TIME      DATE,
+   constraint PK_CONN_HEART_BEAT primary key (SRP_HEART_BEAT_ID)
+);
+
+/*==============================================================*/
+/* Table: ST_CONFIG  系统配置表                                            */
+/*==============================================================*/
+create table ST_CONFIG  (
+   CONFIG_ID            NUMBER                          not null,
+   CONFIG_KEY           VARCHAR2(50),
+   CONFIG_VALUE         VARCHAR2(100),
+   CREATE_TIME          DATE,
+   CREATOR              VARCHAR2(50),
+   UPDATE_TIME          DATE,
+   UPDATOR              VARCHAR2(50),
+   DESCN                VARCHAR2(255),
+   FILE_LOCATION        VARCHAR2(255),
+   constraint PK_ST_CONFIG primary key (CONFIG_ID)
+);

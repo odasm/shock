@@ -1,0 +1,11 @@
+select * from dbms_stats.gather_index_stats
+
+select * from aip_message;
+select  * from aip_message_info;
+update aip_msginfo_persistence
+ set msg_pkg=empty_clob() where csb_id not in(select distinct csb_id from aip_message_persistence);
+
+select sysdate from dual;
+select count(*) from aip_message;
+select count(*) from aip_message where service_state<>0;
+--查看谁锁住了这个表

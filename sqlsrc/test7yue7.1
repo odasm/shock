@@ -1,0 +1,4 @@
+select *
+  from aip_message
+ where receive_time between trunc(sysdate -3 / 24, 'HH24') and
+       trunc(sysdate -2 / 24, 'HH24')

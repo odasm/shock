@@ -1,0 +1,13 @@
+select dbms_flashback.get_system_change_number from dual;
+select count(*) from test;
+delete from test;
+commit;
+--11250185785102
+select count(*) from tEST as of scn 11250185785102;
+--查询之间时间点的值，则可以搞定被删除的数据
+select count(*) from tEST as of scn 11250185780000;
+--恢复数据
+insert into test select * from test as of scn 11250185780000;
+--再次查询数据
+select * from test;
+commit;

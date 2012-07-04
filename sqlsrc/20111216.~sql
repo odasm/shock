@@ -1,0 +1,74 @@
+select * from serv_instance 
+select * from aip_message;
+
+select , from serv_instance where (request_time between sysdate-600 and sysdate )
+and sys_flag =1 and serv_code='server2'
+union
+select ,,,)
+from aip_message where (receive_time between sysdate-5 and sysdate) and serv_code = '1101.SYNC_SERV01.SynReq'
+union
+select sum(decode(receive_status,1,1,0)),sum(decode(send_status,1,1,0)) from serv_instance  where ( receive_time between sysdate-5 and sysdate)
+and sys_flag = 1 and serv_code='server2'
+
+
+
+select a.column1,a.column2,b.column3,b.column4,b.column5,b.column6,c.column7,c.column8
+from (select       sum(decode(receive_time,null,0,1)) column3,sum(decode(request_time,null,0,1)) column4,
+                   sum(decode(response_time,null,0,1)) column5,sum(decode(send_time,null,0,1)) column6 from aip_message
+             where (receive_time between sysdate-4 and sysdate)
+                           and serv_code = '1101.SYNC_SERV01.SynReq') b,
+                 (select sum(decode(request_status,1,1,0)) column1,sum(decode(response_status,1,1,0)) column2
+                          from serv_instance 
+                            where (request_time between sysdate-500 and sysdate )
+                                  and serv_code = 'server2'
+                                  and sys_flag=1) a,
+                    (select sum(decode(receive_status,1,1,0)) column7,sum(decode(send_status,1,1,0)) column8 from serv_instance 
+                            where (receive_time between sysdate-500 and sysdate)
+                                  and serv_code = 'server2'
+                                  and sys_flag = 2) c 
+                                  
+                                  select * from serv_instance_gather_task_sc;
+                                  
+                                  delete from serv_instance_gather_task_sc;
+                                  
+                                  
+         select b.send_system,
+              b.receive_system,
+              reg.serv_name,
+                a.column1,
+                a.column2,
+                b.column3,
+                b.column4,
+                b.column5,
+                b.column6,
+                c.column7,
+                c.column8
+           from 
+                serv_afford_man_reg reg,
+                (select sum(decode(receive_time, null, 0, 1)) column3,
+                        sum(decode(request_time, null, 0, 1)) column4,
+                        sum(decode(response_time, null, 0, 1)) column5,
+                        sum(decode(send_time, null, 0, 1)) column6,
+                        max(serv_code) serv_code,
+                        max(send_system) send_system,
+                        max(receive_system) receive_system
+                   from aip_message
+                  where (receive_time between sysdate - 4 and sysdate)
+                    and serv_code = '1101.SYNC_SERV01.SynReq' group by send_system ) b,
+                (select sum(decode(request_status, 1, 1, 0)) column1,
+                        sum(decode(response_status, 1, 1, 0)) column2
+                   from serv_instance
+                  where (request_time between sysdate - 500 and sysdate)
+                    and serv_code = 'server2'
+                    and sys_flag = 1 group by consumer) a,
+                (select sum(decode(receive_status, 1, 1, 0)) column7,
+                        sum(decode(send_status, 1, 1, 0)) column8
+                   from serv_instance
+                  where (receive_time between sysdate - 500 and sysdate)
+                    and serv_code = 'server2'
+                    and sys_flag = 2 group by consumer) c
+          where b.serv_code = reg.serv_code
+
+
+
+
