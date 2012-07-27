@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- struts映射配置 -->	
+	<package name="common" extends="json-default">
+		 <action name="Login" class="loginAction" method="findAll">
+		 	<result name="success" type="json">../view/list.jsp</result>
+        </action>
+		<!-- 默认的action 映射-->
+		<action name="*_*" class="{1}" method="{2}">
+			<result type="json"></result>
+		</action>
+	</package>
+	
+</struts>
