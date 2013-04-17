@@ -22,7 +22,7 @@ import org.springside.modules.persistence.SearchFilter.Operator;
 // 默认将类中的所有public函数纳入事务管理.
 @Transactional(readOnly = true)
 public class TaskService {
-
+	
 	private TaskDao taskDao;
 
 	public Task getTask(Long id) {
